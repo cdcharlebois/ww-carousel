@@ -1,0 +1,33 @@
+{
+  "name": "wwslickcarousel",
+  "widgetName": "WwSlickCarousel",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "Mendix 2019",
+  "author": "Conner",
+  "config": {
+    "widgetPath": "/Users/conner/mendix/p/FrontEndWorkshopStarter/widgets",
+    "projectPath": "/Users/conner/mendix/p/FrontEndWorkshopStarter/",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:js",
+    "build": "pluggable-widgets-tools build:js",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:js"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "~8.6.0"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6",
+    "react-responsive-carousel": "^3.2.5"
+  }
+}
