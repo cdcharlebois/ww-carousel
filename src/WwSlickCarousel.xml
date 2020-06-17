@@ -23,6 +23,18 @@
                 <caption>Use Keyboard Arrows?</caption>
                 <description>If true, the user can use keyboard arrow keys to navigate the carousel.</description>
             </property>
+            <property key="autoPlay" type="boolean" defaultValue="true">
+                <caption>Auto Play?</caption>
+                <description></description>
+            </property>
+            <property key="infiniteLoop" type="boolean" defaultValue="true">
+                <caption>Loop Infinitely?</caption>
+                <description></description>
+            </property>
+            <property key="autoPlayInterval" type="integer" defaultValue="5">
+                <caption>Auto Play Interval</caption>
+                <description>Enter interval in seconds.</description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>
