@@ -20,12 +20,15 @@ class WwSlickCarousel extends Component {
     // renderOneItem = (item) => { this.props.content(item) }
 
     render() {
-        const { swipeable, useKeyboard } = this.props;
+        const { swipeable, useKeyboard, autoPlay, infiniteLoop, autoPlayInterval } = this.props;
         const carouselOptions = {
             showThumbs: false,
             swipeable: swipeable,
             emulateTouch: swipeable,
-            useKeyboardArrows: useKeyboard
+            useKeyboardArrows: useKeyboard,
+            autoPlay: autoPlay,
+            infiniteLoop: infiniteLoop,
+            interval: autoPlayInterval * 1000
         }
         return (
             <div className="ww-carousel">
